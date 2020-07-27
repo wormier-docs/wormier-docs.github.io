@@ -1,5 +1,7 @@
 # __Womier K66__
 The documentation for the Womier line of keyboards. :rainbow:
+
+Join us on [discord!](https://discord.gg/MKE5dSN)
 * * *
 
 ## QMK Firmware
