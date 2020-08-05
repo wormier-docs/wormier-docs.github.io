@@ -57,8 +57,7 @@ sed -i 's/Vector84,/RgbIsr,/g' lib/chibios/os/common/startup/ARMCMx/compilers/GC
 
 8) If everything goes fine, there should be a folder called ".build" with a .bin file (and some other things)
 
-9) Now it's time to flash that .bin file into your keyboard. To do that, clone https://github.com/xyzz/womier-flasher and follow the readme to start the program
-
+9) Now it's time to flash that .bin file into your keyboard. To do that, download the wormier flasher from here https://github.com/xyzz/womier-flasher/releases and run it.
 10) With the program open, you should plug in your keyboard, click "refresh" and select "Womier K66". Note: If you see a list of 5 "Womier K66", you'll have to try the next step for each one of them until the keyboard stops responding.
 
 11) Click on "Reboot to Bootloader". The keyboard should stop responding.
@@ -76,3 +75,19 @@ sed -i 's/Vector84,/RgbIsr,/g' lib/chibios/os/common/startup/ARMCMx/compilers/GC
     - The file with the keymap is in keyboards/womier/k66/keymaps/default/keymap.c
     - The keycodes are listed in https://beta.docs.qmk.fm/using-qmk/simple-keycodes/keycodes
     - More info about keymaps here: https://beta.docs.qmk.fm/using-qmk/guides/keymap
+
+* * *
+### Compiling wormier flasher from scratch (Advanced Users)
+If for some reason you want to compile the flasher from scratch, run these commands in the cloned womier.
+
+```
+git clone https://github.com/xyzz/womier-flasher.git 
+cd womier-flasher
+python3 -m venv venv
+. venv/bin/activate
+pip install wheel
+pip install -r requirements.txt
+fbs run
+# or "fbs freeze" to create the package
+```
+
