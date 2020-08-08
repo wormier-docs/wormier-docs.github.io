@@ -78,7 +78,7 @@ sed -i 's/Vector84,/RgbIsr,/g' lib/chibios/os/common/startup/ARMCMx/compilers/GC
 
 * * *
 ### Compiling wormier flasher from scratch (Advanced Users)
-If for some reason you want to compile the flasher from scratch, run these commands in the cloned womier.
+If for some reason you want to compile the flasher from scratch, run these commands in the cloned womier directory.
 
 ```
 git clone https://github.com/xyzz/womier-flasher.git 
