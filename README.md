@@ -11,7 +11,7 @@ Join us on [discord!](https://discord.gg/MKE5dSN)
 
 1. What is QMK for?
 
-   QMK lets you create a custom fimrware to your keyboard so you can change the keymap to fit your needs.
+   QMK lets you create a custom firmware to your keyboard so you can change the keymap to fit your needs.
 
 2. Is there any chance that this process bricks my keyboard?
 
