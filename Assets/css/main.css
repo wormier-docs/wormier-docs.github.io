@@ -1,0 +1,81 @@
+@font-face {
+	font-family: 'Alegreya';
+	src: url('../fonts/Alegreya-Regular.woff2') format('woff2'),
+	url('../fonts/Alegreya-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+        font-family: 'Alegreya Sans SC';
+        src: url('../fonts/AlegreyaSansSC-Regular.woff2') format('woff2'),
+        url('../fonts/AlegreyaSansSC-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+}
+
+body {
+	margin: 35px;
+	background-color: #F7F7F7;
+}
+
+* {
+	font-family: 'Alegreya';
+}
+
+h1 {
+	color: #121212;
+}
+
+code {
+	background-color: #737373;
+	color: #F7F7F7;
+	padding: 10px;
+}
+
+code:before {
+	content: "$ ";
+	color: #62BEC1;
+}
+
+.titlebar {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.title {
+}
+
+.discord {
+	color: #7289DA;
+}
+
+.content {
+	background-color: #D8D8D8;
+	padding: 35px;
+	border-radius: 10px;
+}
+
+button {
+	color: white;
+	border: none;
+	border-radius: 10px;
+	font-size: 48px;
+	font-family: 'Alegreya Sans SC'
+}
+
+.purple-primary {
+	background-color: #5548B9;
+}
+
+.blue-secondary {
+	background-color: #62BEC1;
+}
+
+.yellow-tertiary {
+	background-color: #F8E16C;
+}

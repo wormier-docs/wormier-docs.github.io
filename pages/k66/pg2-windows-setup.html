@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Wormier Docs - Environment Setup - Windows</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="description" content="Documentation for the womier line of keyboards.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+		<link href="/Assets/css/main.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="titlebar">
+			<h1 class="title">Wormier Docs</h1>
+			<a class="discord" href="https://discord.gg/MKE5dSN"><h3>Join us on discord!</h2></a>
+		</div>
+		<div class="content">
+			<h1>Environment Setup - Windows</h1>
+			<p>To setup QMK we will need to use many UNIX utilities, however Windows is not an UNIX system. We will need to use an application called <b>MSYS2</b> which packages many different utilities to give us an UNIX environment on Windows.</p> 
+			<h2>1.) Download and install MSYS2 from the official website.</h2>
+			<p>Click the big button below and simply follow through the steps in the installation section, come back when you are done.</p>
+			<a href="https://www.msys2.org/#installation"><button class="blue-secondary">Travel to msys2.org.</button></a>
+			<p>Once you are done with that, install git using this simple command:</p>
+			<code>pacman -S git</code>
+			<h2>2.) Clone the modified version of QMK to MSYS2.</h2>
+			<p>You will need to clone to the MSYS2 user directory, it generally is located in <b>c:\msys64\home[user]\</b>. Modify the command below to get to that directory.</p>
+			<code>cd c:\msys64\home[user]\</code>
+			<p>Once you are done with that and are in the correct directory, run this command to clone our modification of QMK. If you don't know what git is, it is an open source version control system which makes it easy for developers to collaborate and share source code with everyone. If you want to contribute to the project learning git is a great skill to have. However right now you don't need to know it.</p> 
+			<code>git clone -b womier-k66-rgb-support --recurse-submodules -j8 https://github.com/smp4488/qmk_firmware.git</code>
+			<h2>3.) Installation of drivers and other necessary applications.</h2>
+			<p>QMK includes a helpful script which installs all the different dependencies required to compile. First we will need to go into the cloned qmk_firmware directory.</p>
+			<code>cd qmk_firmware/</code>
+			<p>That was easy enough, now we need to run the script.</p>
+			<code>./util/msys2_install.sh</code>
+			<p>When this is fully complete and has no errors, you will need to exit out of MSYS MinGW and open it back up again to reload. This might take a bit. Go back to the MSYS2 home directory and from there go into the qmk_firmware directory. Once this is done move on to the next page by pressing the big button below.</p>
+			<a href="/pages/k66/pg3-building.html"><button class="purple-primary">Alright, I am done.</button></a>
+		</div>
+		<p>This work is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International</a> License.</p>
+	</body>
+</html>
