@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Wormier Docs - Building</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="description" content="Documentation for the womier line of keyboards.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+		<link href="/Assets/css/main.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="titlebar">
+			<h1 class="title">Wormier Docs</h1>
+			<a class="discord" href="https://discord.gg/MKE5dSN"><h3>Join us on discord!</h2></a>
+		</div>
+		<div class="content">
+			<h1>Building</h1>
+			<p>It is now time to compile QMK into machine code for the keyboard! We will use this compiled firmware to flash to the keyboard in the next page. Let us start off by changing one of the files using a simple command. Once you finish the command be sure that <b>only two lines</b> have been changed no more, no less.</p>
+			<code>sed -i 's/Vector84,/RgbIsr,/g' lib/chibios/os/common/startup/ARMCMx/compilers/GCC/vectors.S</code>
+			<p>It is finally time to build, QMK makes it super simple, all you need to do is run this make command.</p>
+			<code>make womier/k66:default</code>
+			<p>When this is done it should make a directory called <b>.build</b> with a few files including a <b>.bin</b> file. This is what we are using to flash onto our keyboard. We will need to install the flasher for this, do you wish to use the pre-compiled binaries (recommended) or run it from source?</p>
+			<a href="/pages/k66/pg4-binaries.html"><button class="purple-primary">I want to use the pre-compiled binaries</button></a>
+			<a href="/pages/k66/pg4-source.html"><button class="blue-secondary">I want to run it from source</button></a>
+		</div>
+		<p>This work is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International</a> License.</p>
+	</body>
+</html>
