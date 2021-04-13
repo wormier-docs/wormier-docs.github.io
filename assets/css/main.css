@@ -170,3 +170,17 @@ pre.code code:before {
 	content: "$ ";
 	color: #62BEC1;
 }
+
+/* Tables */
+table {
+	border-collapse: collapse;
+	line-height: 2;
+}
+
+tr {
+	border: 3px solid black;
+}
+
+td, th {
+	padding: .5rem 1rem;
+}
