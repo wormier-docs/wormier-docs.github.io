@@ -1,0 +1,22 @@
+{
+	"name": "wormier-docs.github.io",
+	"version": "1.0.0",
+	"description": "Docs for the wormier series of keyboards",
+	"main": ".eleventy.js",
+	"scripts": {
+		"build": "eleventy"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/wormier-docs/wormier-docs.github.io.git"
+	},
+	"author": "logo4poop",
+	"license": "CC-BY-NC-SA-4.0",
+	"bugs": {
+		"url": "https://github.com/wormier-docs/wormier-docs.github.io/issues"
+	},
+	"homepage": "https://github.com/wormier-docs/wormier-docs.github.io#readme",
+	"dependencies": {
+		"@11ty/eleventy": "^0.12.1"
+	}
+}
