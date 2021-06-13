@@ -17,6 +17,6 @@
 	},
 	"homepage": "https://github.com/wormier-docs/wormier-docs.github.io#readme",
 	"dependencies": {
-		"eleventy": "^1.0.6"
+		"@11ty/eleventy": "^0.12.1"
 	}
 }
