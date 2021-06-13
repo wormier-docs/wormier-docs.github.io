@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Wormier Docs - Flashing</title>	
+
+		<link rel="stylesheet" href="/assets/vendor/normalize/normalize.css" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+	</head>
+	<body>
+		<div class="page-grid">
+			<header class="page-header width-wide">
+				<h1>
+					<a class="link-reset" href="/">Wormier Docs</a>
+				</h1>
+
+				<div class="page-header__socials">
+					<a href="/table-of-contents">Table of Contents</a>
+					<a href="/status">Status</a>
+					<a href="https://discord.gg/MKE5dSN">Discord</a>
+					<a href="https://github.com/wormier-docs">GitHub</a>
+				</div>
+			</header>
+
+			<div class="width-wide">
+	<img src="/assets/images/wormier-flasher.png" alt="Image of womier flasher">
+</div>
+
+<div class="page-content">
+	<h1>Flashing the firmware to the Womier K66</h1>
+	<p>Flashing is arguably the most exciting part of this process. Please make sure you do all of this in the correct order or you risk bricking your board.</p>
+
+	<h2>Follow these steps</h2>
+	<ol>
+		<li>Plug in the Womier K66 and press the <b>refresh</b> button. In the drop down select <b>Womier K66</b>. If there are multiple options that say "Womier K66", try the next step for each of them until the keyboard stops responding.</li>
+		<li>Press "Reboot to Bootloader". The keyboard should stop responding if you did it correctly.</li>
+		<li>Press "Flash Jumploader". This will flash the utility which starts up QMK.</li>
+		<li>Alright, this is the moment you have been waiting for. Press the "Flash QMK" and then select the .bin file that is located in qmk_firmware/.build/.</li>
+	</ol>
+
+	<div class="mt-4">
+		<a class="btn btn-purple btn-sm" href="/k66/6-testing">I am ready to test</a>
+	</div>
+</div>
+
+		</div>
+
+		<footer class="page-grid page-footer">
+			<div class="width-wide">
+				<p>This work is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International</a> License.</p>
+			</footer>
+		</div>
+	</body>
+</html>
