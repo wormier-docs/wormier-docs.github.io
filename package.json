@@ -1,21 +1,21 @@
 {
-	"name": "wormier-docs.github.io",
+	"name": "sonixqmk.github.io",
 	"version": "1.0.0",
-	"description": "Docs for the wormier series of keyboards",
+	"description": "Documentation for boards powered by Sonix",
 	"main": ".eleventy.js",
 	"scripts": {
 		"build": "eleventy"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/wormier-docs/wormier-docs.github.io.git"
+		"url": "git+https://github.com/SonixQMK/sonixqmk.github.io.git"
 	},
-	"author": "logo4poop",
+	"author": "SonixQMK",
 	"license": "CC-BY-NC-SA-4.0",
 	"bugs": {
-		"url": "https://github.com/wormier-docs/wormier-docs.github.io/issues"
+		"url": "https://github.com/SonixQMK/sonixqmk.github.io/issues"
 	},
-	"homepage": "https://github.com/wormier-docs/wormier-docs.github.io#readme",
+	"homepage": "https://github.com/SonixQMK/sonixqmk.github.io#readme",
 	"dependencies": {
 		"@11ty/eleventy": "^0.12.1"
 	}
