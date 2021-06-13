@@ -1,64 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+---
+layout: layout.njk
+title: Environment Setup - Linux
+---
 
-		<title>Linux Environment Setup - K66 | Wormier Docs</title>
+<div class="page-content">
+	<h1>Environment Setup - Linux</h1>
+	<p>We need to setup the environment for QMK, however as we already have a UNIX environment this should be a bit simpler. The QMK linux installation file currently supports Fedora, Ubuntu/Debian, Arch, (install) Gentoo, Sabayon, OpenSUSE, Slackware, Solus and Void.</p>
 
-		<link rel="stylesheet" href="/assets/vendor/normalize/normalize.css" />
-		<link rel="stylesheet" href="/assets/css/main.css" />
-	</head>
-	<body>
-		<div class="page-grid">
-			<header class="page-header width-wide">
-				<h1>
-					<a class="link-reset" href="/">Wormier Docs</a>
-				</h1>
+	<h2>1.) Install Git</h2>
+	<p>Pretty self explanatory, if you don't already have it. Install git using your distributions package manager.</p>
 
-				<div class="page-header__socials">
-					<a href="/table-of-contents.html">Table of Contents</a>
-					<a href="/status.html">Status</a>
-					<a href="https://discord.gg/MKE5dSN">Discord</a>
-					<a href="https://github.com/wormier-docs">GitHub</a>
-				</div>
-			</header>
+	<h2>2.) Clone the modified version of QMK.</h2>
+	<p>Make a directory with <code>mkdir womier</code> and go into it with <code>cd womier</code>. Run this command to clone our modification of QMK. We have a special branch in a fork so you cannot use unmodified QMK right now.</p> 
+	<pre class="code">
+	  <code>git clone -b womier-k66-rgb-support --recurse-submodules -j8 https://github.com/smp4488/qmk_firmware.git</code>
+	</pre>
 
-			<div class="page-content">
-				<h1>Environment Setup - Linux</h1>
-        <p>We need to setup the environment for QMK, however as we already have a UNIX environment this should be a bit simpler. The QMK linux installation file currently supports Fedora, Ubuntu/Debian, Arch, (install) Gentoo, Sabayon, OpenSUSE, Slackware, Solus and Void.</p>
+	<h2>3.) Installation of drivers and other necessary applications.</h2>
+	<p>QMK includes a helpful script which installs all the different dependencies required to compile. First we will need to go into the cloned qmk_firmware directory.</p>
+	<pre class="code">
+	  <code>cd qmk_firmware/</code>
+	</pre>
+	<p>That was easy enough, now we need to run the script.</p>
+	<pre class="code">
+	  <code>./util/linux_install.sh</code>
+	</pre>
 
-        <h2>1.) Install Git</h2>
-        <p>Pretty self explanatory, if you don't already have it. Install git using your distributions package manager.</p>
-        
-        <h2>2.) Clone the modified version of QMK.</h2>
-        <p>Make a directory with <code>mkdir womier</code> and go into it with <code>cd womier</code>. Run this command to clone our modification of QMK. We have a special branch in a fork so you cannot use unmodified QMK right now.</p> 
-        <pre class="code">
-          <code>git clone -b womier-k66-rgb-support --recurse-submodules -j8 https://github.com/smp4488/qmk_firmware.git</code>
-        </pre>
+	<p>When this is fully complete and has no errors, you will need to exit out of your terminal emulator or current tab and open it back up again to reload. Go back to the cloned qmk_firmware directory. Once this is done move on to the next page by pressing the purple button below.</p>
+	<div class="mt-4">
+		<a class="btn btn-purple btn-sm" href="/k66/3-building">Alright, I am done.</a>
+	</div>
+</div>
 
-        <h2>3.) Installation of drivers and other necessary applications.</h2>
-        <p>QMK includes a helpful script which installs all the different dependencies required to compile. First we will need to go into the cloned qmk_firmware directory.</p>
-        <pre class="code">
-          <code>cd qmk_firmware/</code>
-        </pre>
-        <p>That was easy enough, now we need to run the script.</p>
-        <pre class="code">
-          <code>./util/linux_install.sh</code>
-        </pre>
-        
-        <p>When this is fully complete and has no errors, you will need to exit out of your terminal emulator or current tab and open it back up again to reload. Go back to the cloned qmk_firmware directory. Once this is done move on to the next page by pressing the purple button below.</p>
-        <div class="mt-4">
-          <a class="btn btn-purple btn-sm" href="./3-building.html">Alright, I am done.</a>
-        </div>
-			</div>
-		</div>
-
-		<footer class="page-grid page-footer">
-			<div class="width-wide">
-				<p>This work is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International</a> License.</p>
-			</footer>
-		</div>
-	</body>
-</html>
