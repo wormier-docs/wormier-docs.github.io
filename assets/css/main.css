@@ -113,6 +113,11 @@ body {
 	margin-top: 3rem;
 }
 
+.warning {
+	background-color: #EF4444;
+	color: #fff;
+	text-align: center;
+}
 
 /* Buttons */
 .btn {
