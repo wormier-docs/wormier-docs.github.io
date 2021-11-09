@@ -4,11 +4,8 @@ title: Environment Setup - Windows
 ---
 <div class="page-content">
 	<h1>Building</h1>
-	<p>It is now time to compile QMK into machine code for the keyboard! We will use this compiled firmware to flash to the keyboard in the next page. Let us start off by changing one of the files using a simple command. Once you finish the command be sure that <b>only two lines</b> have been changed no more, no less.</p>
+	<p>It is now time to compile QMK into machine code for the keyboard! We will use this compiled firmware to flash to the keyboard in the next page.</p>
 
-	<pre class="code">
-	  <code>sed -i 's/Vector84,/RgbIsr,/g' lib/chibios/os/common/startup/ARMCMx/compilers/GCC/vectors.S</code>
-	</pre>
 	<p>It is finally time to build, QMK makes it super simple, all you need to do is run this make command.</p>
 
 	<pre class="code">
